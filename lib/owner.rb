@@ -55,12 +55,8 @@ def feed_cats
 end
 
 def sell_pets
-  pets = []
-  Cat.all.each {|cat| cat.mood = "nervous"}
-  Dog.all.each {|dog| dog.mood = "nervous"}
-  pets << Cat.all
-  pets << Dog.all
-  pets.clear
+  Cat.all.each {|cat| cat.mood = "nervous" && cat.owner == nil}
+  Dog.all.each {|dog| dog.mood = "nervous" && dog.owner == nil}
 end
 
 
