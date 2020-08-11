@@ -39,7 +39,7 @@ def dogs
 end
 
 def buy_cat
-  Cat.new
+  Cat.all.find {|cat| Cat.new}
 end
 
 
