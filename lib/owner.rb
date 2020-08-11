@@ -31,7 +31,7 @@ def self.reset_all
 end
 
 def cats
-  Cat.all.select {|cat| }
+  Cat.all.select {|cat| cat.owner == self }
 end
 
 
