@@ -62,8 +62,7 @@ def sell_pets
 end
 
 def list_pets
-  Dog.all.count
-  Cat.all.count
+  "I have #{@owner.dogs.count} dog(s), and #{@owner.cats.count} cat(s)."
 end
 
 
