@@ -61,7 +61,10 @@ def sell_pets
   dog.owner = nil}
 end
 
-
+def list_pets
+  self.all.Dog.count
+  self.all.Cat.count
+end
 
 
 
