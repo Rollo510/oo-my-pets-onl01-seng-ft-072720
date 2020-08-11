@@ -60,7 +60,6 @@ def sell_pets
   Dog.all.each {|dog| dog.mood = "nervous"}
   pets << Cat.all
   pets << Dog.all
-  end
   pets.clear
 end
 
