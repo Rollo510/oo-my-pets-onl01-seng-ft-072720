@@ -31,7 +31,7 @@ def self.reset_all
 end
 
 def cats
-  self.cats.all
+  Cat.all.select
 end
 
 
