@@ -62,8 +62,8 @@ def sell_pets
 end
 
 def list_pets
-  self.Dog.all.count
-  self.Cat.all.count
+  Dog.all.count
+  Cat.all.count
 end
 
 
