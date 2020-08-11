@@ -47,10 +47,12 @@ def buy_dog(name)
 end
 
 def walk_dogs
-  
+  Dog.all.mood = "happy"
 end
 
-
+def feed_cats
+  Cat.all.mood = "happy"
+end
 
 
 
